@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/code.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
@@ -34,8 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbar">
                   <ul class="nav navbar-nav">
                     <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#academic">Formação acadêmica</a></li>
-                    <li><a href="#professional">Formação profissional</a></li>
+                    <li><a href="#academic">Academia e Mercado</a></li>
                     <li><a href="#languages">Idiomas</a></li>
                     <li><a href="#projects">Projetos</a></li>
                   </ul>
@@ -113,184 +114,227 @@
 
     <main>
 
-      <section class="section-container" id="about">
-        <h2 class="section-title">Sobre mim</h2>
-        <blockquote class="quote">
-          <p>"I'm the one who knocks"</p>
-          <cite>&mdash; Heisemberg</cite>
-        </blockquote>
-        <p class="section-content">
-          Desenvolvedor com perfil fullstack, apaixonado por tecnologia, ficção ciêntifica,
-          física e conhecimento, busco sempre aprimorar minhas habilidades através de literatura e cursos
-          em diferentes áreas relacionadas à desenvolvimento.
-          Profissionalmente, trabalho principalmente com a plataforma .NET (MVC4+) para criação de aplicações web.
-          Costumo participar ativamente da construção das aplicações desde a estrutura de dados na base,
-          passando pela arquitetura das camadas, o desenvolvimento efetivo e, enfim, no deploy.
-        </p>
+      <section id="about" class="reverse">
+        <div class="section-container">
+          <h2 class="section-title">Sobre mim</h2>
+          <p class="code-block">
+            <span class="code-function-name">print</span>(<span class="code-function-name">getContent</span>(<span class="code-string">'about-me'</span>));
+          </p>
+          <blockquote class="quote">
+            <p class="reverse">"I'm the one who knocks"</p>
+            <cite>&mdash; Heisemberg</cite>
+          </blockquote>
+          <p class="section-content">
+            Desenvolvedor com perfil fullstack, apaixonado por tecnologia, ficção ciêntifica,
+            física e conhecimento, busco sempre aprimorar minhas habilidades através de literatura e cursos
+            em diferentes áreas relacionadas à desenvolvimento.
+            Profissionalmente, trabalho principalmente com a plataforma .NET (MVC4+) para criação de aplicações web.
+            Costumo participar ativamente da construção das aplicações desde a estrutura de dados na base,
+            passando pela arquitetura das camadas, o desenvolvimento efetivo e, enfim, no deploy.
+          </p>
+        </div>
+
       </section>
 
       <section class="section-container" id="academic">
-        <h2 class="section-title">Formação acadêmica</h2>
+        <h2 class="section-title">Academia e mercado</h2>
         <div class="row">
+          <div class="col-md-6">
+            <p class="code-block">
+                app.<span class="code-function-name">loadTimelineItems</span>().<span class="code-function-name">forEach</span>(<span class="code-function">function</span>(item) {
+                <br>
+                <span class="code-function-name" style="margin-left: 2%;">displayOnScroll</span>(item);
+                <br>
+              });
+            </p>
+          </div>
           <div class="col-lg-6">
-            <blockquote class="quote">
+            <blockquote class="quote" style="float:right;">
               <p>“In a dark place we find ourselves, <br>and a little more knowledge lights our way.”</p>
               <cite>&mdash; Yoda</cite>
             </blockquote>
           </div>
         </div>
+        <div id="cd-timeline" class="cd-container">
+          <div class="cd-timeline-block">
+      			<div class="cd-timeline-img cd-picture"></div> <!-- cd-timeline-img -->
 
-        <div class="row">
-          <div class="col-sm-12 col-md-offset-2 col-md-5" style="border-left: 4px solid #33cfc6">
-            <h3><strong>Bacharelado em Ciência e Tecnologia</strong> <br> Universidade Federal do ABC</h3>
-            <p>desde 2014</p>
-          </div>
-          <div class="col-sm-12 col-md-5" style="border-left: 4px solid #33cfc6;">
-            <h3><strong>Técnico em Informática</strong>,<br> ETEC de Mauá</h3>
-            <p>de 06/2013 à 12/2014</p>
-          </div>
-        </div>
+      			<div class="cd-timeline-content">
+      				<h2>Técnico em Informática pela ETEC de Mauá</h2>
+      				<p>
+                Na ETEC tive meu primeiro contato com programação, utilizando .NET com C#.
+                <br>
+                Desde então, mergulhei no universo da tecnologia e tornei disso meu mundo.
+                <br>
+                O curso, no geral, me deu um background importantíssimo para conseguir encarar
+                o dinamismo do mercado de trabalho.
+              </p>
+      				<span class="cd-date">Dezembro/2014</span>
+      			</div> <!-- cd-timeline-content -->
+      		</div> <!-- cd-timeline-block -->
 
-        <div class="row">
-          <div class="col-sm-12 col-md-offset-2 col-md-10">
-            <h3>Formação complementar:
-              <a href="https://cursos.alura.com.br/user/kaiovinicios2" target="_blank" class="alura-link">
-                Alura, cursos online de tecnologia
-              </a>
-            </h3>
-          </div>
-        </div>
+      		<div class="cd-timeline-block">
+      			<div class="cd-timeline-img cd-picture">
+      			</div> <!-- cd-timeline-img -->
+
+      			<div class="cd-timeline-content">
+      				<h2>Início da graduação na UFABC</h2>
+      				<p>
+                A universidade tem um poder enorme de moldar-nos como pessoas, tanto
+                pessoal quanto profissionalmente. Na UFABC aprendi e venho aprendendo
+                a ver o mundo de forma diferente, com mais clareza dos reais problemas e
+                das reais oportunidades.
+              </p>
+      				<span class="cd-date">Junho/2015</span>
+      			</div> <!-- cd-timeline-content -->
+      		</div> <!-- cd-timeline-block -->
+
+      		<div class="cd-timeline-block">
+      			<div class="cd-timeline-img cd-picture">
+      			</div> <!-- cd-timeline-img -->
+
+      			<div class="cd-timeline-content">
+      				<h2>Desenvolvedor .NET: Geosiga</h2>
+              <p>
+                A Geosiga foi muito especial para mim,
+                principalmente por ter sido meu primeiro local de trabalho.
+                Lá, aprendi as escrever testes automatizados usando Selenium
+                e rapidamente aprendi a utilizar o padrão MVC em .NET para desenvolver aplicações web.
+                Mas, mais importante, recebi uma carga de conhecimento enorme sobre novas tecnologias e
+                comecei a desenvolver meu mindset ágil através do uso de SCRUM.
+              </p>
+              <span class="cd-date">Abril/2015</span>
+      			</div> <!-- cd-timeline-content -->
+      		</div> <!-- cd-timeline-block -->
+
+      		<div class="cd-timeline-block">
+      			<div class="cd-timeline-img cd-picture">
+      			</div> <!-- cd-timeline-img -->
+
+      			<div class="cd-timeline-content">
+      				<h2>Desenvolvedor .NET: 2Z Soluções</h2>
+      				<span class="cd-date">Agosto/2016</span>
+              <p>
+                Na 2Z tive a oportunidade de aperfeiçoar minhas habilidades
+                com o padrão MVC e com .NET como um todo, tendo participado
+                em projetos com diferentes características e tecnologias. Ainda,
+                fortaleci imensamente meu arsenal como front-end developer,
+                desenvolvendo layouts e protótipos para diferentes tipos de websites.
+              </p>
+      			</div> <!-- cd-timeline-content -->
+      		</div> <!-- cd-timeline-block -->
+
+      		<div class="cd-timeline-block">
+      			<div class="cd-timeline-img cd-picture">
+      			</div> <!-- cd-timeline-img -->
+
+      			<div class="cd-timeline-content">
+      				<h2>Desenvolvedor Frontend: IsQuik</h2>
+      				<p>
+                Trabalhar no IsQuik vem sendo uma experiência incrível,
+                principalmente porque fui forçado a sair da minha zona de
+                conforto do mundo JQuery + Bootstrap e utilizar novas tecnologias
+                como AngularJS, Material Design e Cordova.
+              </p>
+      				<span class="cd-date">Março/2017</span>
+      			</div> <!-- cd-timeline-content -->
+      		</div> <!-- cd-timeline-block -->
+      	</div> <!-- cd-timeline -->
+        <h3 class="text-center">Formação complementar:
+          <a href="https://cursos.alura.com.br/user/kaiovinicios2" target="_blank" class="alura-link">
+            Alura, cursos online de tecnologia
+          </a>
+        </h3>
       </section>
+      <section id="languages" style="background-color: #272626;color:White;">
 
-      <section class="section-container" id="professional">
-        <h2 class="section-title">Formação profissional</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <blockquote class="quote">
-              <p>"Great powers come with great responsibilities”</p>
-              <cite>&mdash; Uncle Ben</cite>
-            </blockquote>
+        <div class="section-container">
+          <h2 class="section-title">Idiomas</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="code-block">
+                app.<span class="code-function-name">getLearnedLanguages</span>().<span class="code-function-name">forEach</span>(<span class="code-function">function</span>(language) {
+                  <br>
+                  <span class="code-function-name code-indent-1">printLanguageBlock</span>({
+                    <br> <span class="code-indent-2">img: language.img,</span>
+                    <br> <span class="code-indent-2">title: language.title,</span>
+                    <br> <span class="code-indent-2">status: language.status</span>
+                    <br> <span class="code-indent-1"> });</span>
+                  <br>
+                });
+              </p>
+            </div>
+            <div class="col-md-6">
+              <blockquote class="quote" style="float:right">
+                <p class="reverse">"Du cafe, s'il vous plaît?”</p>
+                <cite>&mdash; Moi-même</cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-sm-12 col-md-4 topdiv">
+              <div class="thumbnail reverse fadethisdiv">
+                <img src="./img/usfr.png" alt="US flag" class="flag">
+                <div class="caption reverse">
+                  <h3 class="lang-title"> Inglês </h3>
+                  <p><span class="skill-type">Lendo:</span> Fluente</p>
+                  <p><span class="skill-type">Falando:</span> Avançado</p>
+                  <p><span class="skill-type">Escrevendo:</span> Avançado</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="thumbnail reverse">
+                <img src="./img/sfr.png" alt="US flag" class="flag">
+                <div class="caption reverse">
+                  <h3 class="lang-title"> Espanhol </h3>
+                  <p><span class="skill-type">Lendo:</span> Avançado</p>
+                  <p><span class="skill-type">Falando:</span> Intermediário</p>
+                  <p><span class="skill-type">Escrevendo:</span> Intermediário</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="thumbnail reverse">
+                <img src="./img/ffr.png" alt="US flag" class="flag">
+                <div class="caption reverse">
+                  <h3 class="lang-title"> Francês </h3>
+                  <p><span class="skill-type">Lendo:</span> Intermediário</p>
+                  <p><span class="skill-type">Falando:</span> Básico</p>
+                  <p><span class="skill-type">Escrevendo:</span> Básico</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+              <p><a class="duo-link" href="https://www.duolingo.com/Kaio_Amaral" target="_blank">Kaio_Amaral</a> no Duolingo</p>
+            </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3><strong>Desenvolvedor Web .NET Jr.</strong></h3>
-              </div>
-              <div class="panel-body">
-                <h3> Geosiga - Soluções em Geoposicionamento </h3>
-                <p>Abril/2015 à Maio/2016</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3><strong>Desenvolvedor Web .NET Jr.</strong></h3>
-              </div>
-              <div class="panel-body">
-                <h3> 2Z Soluções </h3>
-                <p>desde Ago/2016</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-container" id="languages">
-
-        <h2 class="section-title">Idiomas</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <blockquote class="quote">
-              <p>"Du cafe, s'il vous plaît?”</p>
-              <cite>&mdash; Moi-même</cite>
-            </blockquote>
-          </div>
-        </div>
-
-        <div class="row text-center">
-          <div class="col-sm-12 col-md-4">
-            <div class="thumbnail">
-              <img src="./img/usfr.png" alt="US flag" class="flag">
-              <div class="caption">
-                <h3 class="lang-title"> Inglês </h3>
-                <p><span class="skill-type">Lendo:</span> Fluente</p>
-                <p><span class="skill-type">Falando:</span> Avançado</p>
-                <p><span class="skill-type">Escrevendo:</span> Avançado</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div class="thumbnail">
-              <img src="./img/sfr.png" alt="US flag" class="flag">
-              <div class="caption">
-                <h3 class="lang-title"> Espanhol </h3>
-                <p><span class="skill-type">Lendo:</span> Avançado</p>
-                <p><span class="skill-type">Falando:</span> Intermediário</p>
-                <p><span class="skill-type">Escrevendo:</span> Intermediário</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div class="thumbnail">
-              <img src="./img/ffr.png" alt="US flag" class="flag">
-              <div class="caption">
-                <h3 class="lang-title"> Francês </h3>
-                <p><span class="skill-type">Lendo:</span> Intermediário</p>
-                <p><span class="skill-type">Falando:</span> Básico</p>
-                <p><span class="skill-type">Escrevendo:</span> Básico</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-12">
-            <p><a class="duo-link" href="https://www.duolingo.com/Kaio_Amaral" target="_blank">Kaio_Amaral</a> no Duolingo</p>
-          </div>
-        </div>
-
-        <div class="row duo-wrapper">
-
-        </div>
       </section>
 
       <section class="section-container" id="projects">
-        <h2 class="section-title">Projetos</h2>
-        <div class="row">
+        <h2 class="section-title">Principais Projetos</h2>
+        <div class="row" style="padding: 2%;">
+          <div class="col-md-6">
+                  <p class="code-block">
+                    app.<span class="code-function-name">getProjects</span>().<span class="code-function-name">forEach</span>(<span class="code-function">function</span>(project) {
+                  <br>
+                  <span class="code-function-name code-indent-1">createProjectPanel</span>({
+                    <br> <span class="code-indent-2">title: project.title,</span>
+                    <br> <span class="code-indent-2">content: project.content,</span>
+                    <br> <span class="code-indent-2">technologies: project.technologies,</span>
+                    <br> <span class="code-indent-1"> });</span>
+                  <br>
+                });
+              </p>
+          </div>
           <div class="col-md-6">
             <blockquote class="quote">
               <p>"Those who can imagine anything, can create the impossible.”</p>
               <cite>&mdash; Alan Turing</cite>
             </blockquote>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title project-title">
-              Plataforma de monitoramento + API
-            </h3>
-          </div>
-          <div class="panel-project panel-body">
-            <p>
-              <span class="project-topic">Descrição:</span>
-              Projeto interno voltado a atender demandas das equipes de atendimento
-              e comercial, focado no lançamento de ordens de serviço,
-              cadastro de clientes e controle de aparelhos
-            </p>
-            <p>
-              <span class="project-topic">Atuação:</span>
-              QA Tester
-            </p>
-            <p>
-              <span class="label label-default">NodeJS</span>
-              <span class="label label-default">AngularJS</span>
-              <span class="label label-default">Jasmine</span>
-              <span class="label label-default">ASP.NET Web API</span>
-              <span class="label label-default">XUnit</span>
-              <span class="label label-default">SQL Server</span>
-            </p>
           </div>
         </div>
 
@@ -387,40 +431,16 @@
           <div class="panel-project panel-body collapse" id="project5">
             <p>
               <span class="project-topic">Descrição:</span>
-              Sistema voltado ao compartilhamento de informações entre médicoa
+              Sistema voltado ao compartilhamento de informações entre médico
               e pacientes, agendamento de consultas, relatório de sintomas, etc
             </p>
             <p><span class="project-topic">Atuação:</span>
-              Desenvolvedor Front End, Desenvolvedor Back End, Tester
+              Desenvolvedor Front End
             </p>
             <p>
               <span class="label label-default">Javascript</span>
               <span class="label label-default">HTML</span>
               <span class="label label-default">CSS</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title project-title">
-              Portal
-              <a href="#" class="toggle-expand" data-toggle="collapse" data-target="#project6" onclick="return false;">
-                [clique para expandir]
-              </a>
-            </h3>
-          </div>
-          <div class="panel-project panel-body collapse" id="project6">
-            <p>
-              <span class="project-topic">Descrição:</span>
-              Portal para utilização de clientes e funcionários
-            </p>
-            <p><span class="project-topic">Atuação:</span>
-              Desenvolvedor Back End
-            </p>
-            <p>
-              <span class="label label-default">VB .NET</span>
-              <span class="label label-default">SQL Server</span>
             </p>
           </div>
         </div>
@@ -441,31 +461,6 @@
               para extração e inserção na base de dados,
               incluia funcionalidade de avaliar XML's anexados
               e salvá-los como notas fiscais no banco de dados.
-            </p>
-            <p><span class="project-topic">Atuação:</span>
-              Desenvolvedor Back End
-            </p>
-            <p>
-              <span class="label label-default">C# .NET</span>
-              <span class="label label-default">SQL Server</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title project-title">
-              Leitor de Porta Serial
-              <a href="#" class="toggle-expand" data-toggle="collapse" data-target="#project8" onclick="return false;">
-                [clique para expandir]
-              </a>
-            </h3>
-          </div>
-          <div class="panel-project panel-body collapse" id="project8">
-            <p>
-              <span class="project-topic">Descrição:</span>
-              Projeto voltado a leitura de porta seriais para extração de
-              dados enviados por hardware conectado a porta COM
             </p>
             <p><span class="project-topic">Atuação:</span>
               Desenvolvedor Back End
@@ -510,6 +505,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/toggle-navbar.js"></script>
+    <script src="js/timeline.js"></script>
 
   </body>
 </html>

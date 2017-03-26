@@ -7,6 +7,16 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 
+.reverse {
+  background-color: #272626;
+  color: White !important;
+}
+
+.language-block {
+  background-color: #272626;
+  border: 1px solid #ccc;
+}
+
 .footer-anchor-wrapper {
   margin-top: 3%;
 }
@@ -23,10 +33,6 @@ body {
 
 .footer-anchor:hover {
   color: black;
-}
-
-.navbar-nav {
-  display: none;
 }
 
 .project-topic {
@@ -52,7 +58,7 @@ body {
 
 .quote {
   margin: 20px auto;
-  float: left
+  float: left;
 }
 
 .quote p {
@@ -99,13 +105,13 @@ section {
 }
 
 .opaque {
-  border-radius: 10px;
   background-color: rgba(0,0,0,0.7);
 }
 
 .navbar {
   border-bottom: 1px solid #ccc;
-  padding: 0 !important;
+  display: none;
+  background-color: white;
 }
 
 .navbar a {
@@ -125,7 +131,6 @@ section {
 .bg, .bg h1, .bg h2 {
   color: #f2f2f2;
 }
-
 
 .parallax {
   background-attachment: fixed;
@@ -186,6 +191,7 @@ a .head-icon, a .head-icon:hover, a .head-icon:visited {
 }
 
 .flag {
+  margin-top: 2%;
   max-width: 128px;
   max-height: 128px;
 }
