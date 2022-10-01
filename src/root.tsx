@@ -1,19 +1,18 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import React from 'react';
-import './App.css';
 import SocialIconLink from './components/social-icon';
+import * as S from './styles';
 
-const App = () => {
+const Root = () => {
   return (
-    <React.Fragment>
+    <S.Root>
       <h1>Kaio Silveira</h1>
       <SocialIconLink
         href="https://github.com/kaiosilveira"
         icon={faGithub}
         ariaLabel="link to github profile"
       />
-    </React.Fragment>
+    </S.Root>
   );
 };
 
-export default App;
+export default Root;
