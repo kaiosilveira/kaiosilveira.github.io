@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Root = styled.div`
-  width: 98vw;
+  max-width: 1024px;
   min-height: 98vh;
   display: flex;
   padding: 1em;
