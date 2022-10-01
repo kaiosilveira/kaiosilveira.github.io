@@ -8,10 +8,10 @@ const CodingAroundTheWorldSection = () => {
   return (
     <S.CodingAroundTheWorld>
       <h2>Coding around the world 🌍</h2>
-      <JustifiedParagraph
-        text="Recently I've started a funny project based on taking pictures in front of well-known places
-        around the world. Below there are my initial pictures of this new adventure."
-      />
+      <JustifiedParagraph>
+        Recently I've started a funny project based on taking pictures in front of well-known places
+        around the world. Below there are my initial pictures of this new adventure.
+      </JustifiedParagraph>
       <S.PictureGallery>
         <Figure
           imgSrc={parisPic}
