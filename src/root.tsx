@@ -7,10 +7,10 @@ const Root = () => {
   return (
     <S.Root>
       <h1>Kaio Silveira</h1>
-      <JustifiedParagraph
-        text="Father &amp; husband, software engineer, restless student. Loves to solve difficult problems
-        and to talk about philosophical stuff with his 5yo boy."
-      />
+      <JustifiedParagraph>
+        Father &amp; husband, software engineer, restless student. Loves to solve difficult problems
+        and to talk about philosophical stuff with his 5yo boy.
+      </JustifiedParagraph>
       <SocialLinksSection />
       <CodingAroundTheWorldSection />
     </S.Root>
