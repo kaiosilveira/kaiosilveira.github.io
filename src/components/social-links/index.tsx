@@ -2,7 +2,7 @@ import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-ico
 import SocialIconLink from '../social-icon';
 
 const SocialLinks = () => (
-  <div>
+  <footer>
     <SocialIconLink
       href="https://github.com/kaiosilveira"
       icon={faGithub}
@@ -18,7 +18,7 @@ const SocialLinks = () => (
       icon={faMedium}
       ariaLabel="link to Medium blog"
     />
-  </div>
+  </footer>
 );
 
 export default SocialLinks;
