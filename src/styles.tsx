@@ -8,3 +8,8 @@ export const Root = styled.div`
   align-items: center;
   flex-direction: column;
 `;
+
+export const Subtitle = styled.div`
+  padding: 1em;
+  text-align: justify;
+`;
