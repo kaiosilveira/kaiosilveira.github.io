@@ -9,6 +9,8 @@ export const CodingAroundTheWorld = styled.section`
 export const PictureGallery = styled.div`
   display: flex;
   flex-direction: row;
-  width: 100%;
-  overflow: scroll;
+  overflow: auto;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
 `;

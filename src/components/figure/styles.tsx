@@ -10,6 +10,9 @@ export const FigCaption = styled.figcaption`
 
 export const FigureWrapper = styled.figure`
   margin: 0;
-  width: 100%;
   padding: 1em;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
