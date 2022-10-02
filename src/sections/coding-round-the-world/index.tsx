@@ -18,7 +18,7 @@ const CodingAroundTheWorldSection = () => {
           alt="Computer in front of the Eiffel Tower"
           caption="Paris, France 🇫🇷"
         />
-        <Figure imgSrc={romePic} alt="Computer in front of the Coliseum" caption="Roma, Italy 🇮🇹" />
+        <Figure imgSrc={romePic} alt="Computer in front of the Coliseum" caption="Rome, Italy 🇮🇹" />
       </S.PictureGallery>
     </S.CodingAroundTheWorld>
   );
