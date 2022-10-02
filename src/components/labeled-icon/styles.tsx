@@ -6,6 +6,7 @@ export const LabeledIcon = styled.div`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  padding: 0 0.5em;
 `;
 
 export const StyledIcon = styled(FontAwesomeIcon)`
