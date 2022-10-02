@@ -5,7 +5,7 @@ import avatarImg from '../../assets/avatar.jpg';
 import Avatar from '../../components/avatar';
 import JustifiedParagraph from '../../components/justified-text';
 
-const MainSection = () => (
+const Main = () => (
   <S.Main>
     <Avatar imgSrc={avatarImg} />
     <h1>Kaio Silveira</h1>
@@ -18,4 +18,4 @@ const MainSection = () => (
   </S.Main>
 );
 
-export default MainSection;
+export default Main;
