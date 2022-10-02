@@ -4,9 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "jest": {
-    "globals": {
-      "APP_NAME": "Demo"
-    },
+    "testEnvironment": "jest-environment-jsdom",
     "transform": {
       "^.+\\.tsx$": "ts-jest",
       "^.+\\.ts$": "ts-jest"
