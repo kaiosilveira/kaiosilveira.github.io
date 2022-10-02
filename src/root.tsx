@@ -1,6 +1,6 @@
 import * as S from './styles';
-import CodingAroundTheWorldSection from './sections/coding-round-the-world';
 import MainSection from './sections/main';
+import CodingAroundTheWorldSection from './sections/coding-round-the-world';
 
 const Root = () => {
   return (
