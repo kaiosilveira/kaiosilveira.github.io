@@ -1,5 +1,6 @@
 import parisPic from '../../assets/paris.jpg';
 import romePic from '../../assets/rome.jpg';
+import lisbonPic from '../../assets/lisbon.jpg';
 import JustifiedParagraph from '../../components/justified-text';
 import Figure from '../../components/figure';
 import * as S from './styles';
@@ -19,6 +20,11 @@ const CodingAroundTheWorldSection = () => {
           caption="Paris, France 🇫🇷"
         />
         <Figure imgSrc={romePic} alt="Computer in front of the Coliseum" caption="Rome, Italy 🇮🇹" />
+        <Figure
+          imgSrc={lisbonPic}
+          alt="Computer in front of the Belém Tower"
+          caption="Lisbon, Portugal 🇵🇹"
+        />
       </S.PictureGallery>
     </S.CodingAroundTheWorld>
   );
