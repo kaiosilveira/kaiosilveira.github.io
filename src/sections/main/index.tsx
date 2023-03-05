@@ -1,7 +1,7 @@
 import * as S from './styles';
 import LabeledIcons from './labeled-icons';
 import SocialLinksSection from '../social-links';
-import avatarImg from '../../assets/avatar-paris.jpg';
+import avatarImg from '../../assets/memoji.jpg';
 import Avatar from '../../components/avatar';
 import JustifiedParagraph from '../../components/justified-text';
 
