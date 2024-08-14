@@ -11,7 +11,7 @@ const Main = () => (
     <h1>Kaio Silveira</h1>
     <JustifiedParagraph>
       Father &amp; husband, software engineer, restless student. Loves to solve difficult problems
-      and to talk about philosophical stuff with his 5yo boy.
+      and to talk about philosophical stuff with his {new Date().getFullYear() - 2017} yo boy.
     </JustifiedParagraph>
     <LabeledIcons />
     <SocialLinksSection />
