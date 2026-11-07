@@ -1,5 +1,4 @@
 import * as S from './styles';
-import LabeledIcons from './labeled-icons';
 import SocialLinksSection from '../social-links';
 import avatarImg from '../../assets/memoji.jpg';
 import Avatar from '../../components/avatar';
@@ -11,9 +10,8 @@ const Main = () => (
     <h1>Kaio Silveira</h1>
     <JustifiedParagraph>
       Father &amp; husband, software engineer, restless student. Loves to solve difficult problems
-      and to talk about philosophical stuff with his {new Date().getFullYear() - 2017} yo boy.
+      and to talk about philosophical stuff.
     </JustifiedParagraph>
-    <LabeledIcons />
     <SocialLinksSection />
   </S.Main>
 );
