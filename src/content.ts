@@ -5,7 +5,7 @@ export const about = {
   lead: 'Most of the work happens before the code: naming the constraint that actually matters, laying the options side by side, and finding the cheapest way to check the riskiest assumption.',
   paragraphs: [
     "I'm Kaio, a software architect at Bloqit, where I design and build the platform behind its smart lockers. About a decade of hands-on engineering, from early-stage products to systems that have to keep running while the company grows. Current focus: distributed systems reliability, ML foundations, and AI engineering (foundation models, RAG, evaluation).",
-    'Outside work I study the classics in public, one repository at a time, and like walking around the city to think.',
+    "Outside work I study the classics in public, one repository at a time. Away from the screen I'm usually lifting, training jiu-jitsu and MMA, or out for a run.",
   ],
 };
 
