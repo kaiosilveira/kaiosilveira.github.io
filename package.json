@@ -10,8 +10,8 @@
       "^.+\\.ts$": "ts-jest"
     },
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/mocks/file_mock.js",
-      "\\.(css|less)$": "<rootDir>/src/mocks/style_mock.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/file_mock.cjs",
+      "\\.(css|less)$": "<rootDir>/src/__mocks__/style_mock.cjs"
     },
     "setupFilesAfterEnv": [
       "<rootDir>/setup_jest.ts"
