@@ -1,0 +1,17 @@
+# Kaio Silveira
+
+> Software architect in Lisbon, building at Bloqit. Architecture decisions are bets: I make them explicit, test the risky ones, and write down what would change my mind.
+
+## Selected work
+
+- [Refactoring](https://github.com/kaiosilveira/refactoring): Fowler's 61 refactorings (2nd ed.) step by step, with diffs and tests.
+- [Stability patterns](https://github.com/kaiosilveira/stability-patterns): Release It! patterns in TypeScript, with load tests and fault injection for circuit breaker and let it crash.
+- [Design patterns](https://github.com/kaiosilveira/design-patterns): All 23 GoF patterns in C#, with diagrams and tests.
+- [Test-driven development](https://github.com/kaiosilveira/test-driven-development): Beck's TDD by Example, one pull request per chapter.
+
+## Elsewhere
+
+- [GitHub](https://github.com/kaiosilveira)
+- [CV / LinkedIn](https://www.linkedin.com/in/kaio-silveira/)
+- [Medium](https://medium.com/@kaiosilveira)
+- [X](https://twitter.com/kaio_dev)
