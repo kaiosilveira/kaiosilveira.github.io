@@ -1,20 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      // Apply a remembered theme before first paint to avoid a flash of the wrong theme.
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+    <title>Kaio Silveira, software architect</title>
+    <meta
+      name="description"
+      content="Kaio Silveira, software architect at Bloqit. Architecture decisions are bets: I make them explicit, test the risky ones, and write down what would change my mind."
+    />
+    <link rel="canonical" href="https://kaiosilveira.github.io/" />
+    <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111318" media="(prefers-color-scheme: dark)" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
-    <title>Kaio Silveira</title>
-    <meta name="description" content="Kaio Silveira — software architect. Architecture, reliability, refactoring and AI engineering, with the evidence to back it." />
-    <meta property="og:title" content="Kaio Silveira" />
-    <meta property="og:description" content="Kaio Silveira — software architect. Architecture, reliability, refactoring and AI engineering, with the evidence to back it." />
-    <meta property="og:url" content="https://kaiosilveira.github.io" />
+
     <meta property="og:type" content="website" />
-    <!-- TODO: add og:image once the designed social card ships with the redesign -->
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:site_name" content="Kaio Silveira" />
+    <meta property="og:url" content="https://kaiosilveira.github.io/" />
+    <meta property="og:title" content="Kaio Silveira, software architect" />
+    <meta
+      property="og:description"
+      content="Architecture decisions are bets. I make them explicit, test the risky ones, and write down what would change my mind."
+    />
+    <meta property="og:image" content="https://kaiosilveira.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Kaio Silveira. Architecture decisions are bets. I make them explicit, test the risky ones, and write down what would change my mind."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@kaio_dev" />
+    <meta name="twitter:creator" content="@kaio_dev" />
+    <meta name="twitter:title" content="Kaio Silveira, software architect" />
+    <meta
+      name="twitter:description"
+      content="Architecture decisions are bets. I make them explicit, test the risky ones, and write down what would change my mind."
+    />
+    <meta name="twitter:image" content="https://kaiosilveira.github.io/og-image.png" />
   </head>
   <body>
     <div id="root"></div>
