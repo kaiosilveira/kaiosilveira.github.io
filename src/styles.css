@@ -1,0 +1,466 @@
+/* Direction A, "Editorial": one strong reading column with a narrow left margin for section labels. */
+:root {
+  --paper: #fbfbfa;
+  --ink: #15171c;
+  --ink-soft: #4a4f5a;
+  --rule: #dfe0e3;
+  --card: #ffffff;
+  --accent: #2a45b8;
+
+  --display: 'Newsreader Variable', 'Iowan Old Style', Georgia, serif;
+  --body: 'Hanken Grotesk Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 16px;
+  --s4: 24px;
+  --s5: 40px;
+  --s6: 64px;
+  --s7: 104px;
+
+  --t-xs: 0.8125rem;
+  --t-sm: 0.9375rem;
+  --t-md: 1.0625rem;
+  --t-lg: 1.375rem;
+  --t-xl: 2rem;
+  --t-hero: clamp(3.4rem, 14vw, 9.5rem);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #111318;
+    --ink: #ecebe6;
+    --ink-soft: #a3a6ae;
+    --rule: #2a2d35;
+    --card: #171a20;
+    --accent: #9fb0ff;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --paper: #111318;
+  --ink: #ecebe6;
+  --ink-soft: #a3a6ae;
+  --rule: #2a2d35;
+  --card: #171a20;
+  --accent: #9fb0ff;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: var(--t-md);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+@media (min-width: 640px) {
+  .wrap {
+    padding-left: max(32px, env(safe-area-inset-left, 0px));
+    padding-right: max(32px, env(safe-area-inset-right, 0px));
+  }
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Header */
+header.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--s4);
+}
+
+.mark {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: var(--t-lg);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.toggle {
+  font: 500 var(--t-xs) / 1 var(--body);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: var(--s2) var(--s3);
+  cursor: pointer;
+  min-height: 36px;
+  min-width: 72px;
+}
+
+.toggle:hover {
+  color: var(--ink);
+  border-color: var(--ink-soft);
+}
+
+/* Signature: the name as typography */
+.hero {
+  padding-block: var(--s6);
+  border-bottom: 1px solid var(--rule);
+}
+
+.kicker {
+  font-size: var(--t-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 var(--s4);
+}
+
+.name {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: var(--t-hero);
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+  margin: 0;
+  font-variation-settings: 'opsz' 72;
+}
+
+.name span {
+  display: block;
+}
+
+.name .last {
+  font-style: italic;
+  font-weight: 400;
+  padding-left: 0.55em;
+}
+
+.name .last::after {
+  content: '.';
+  color: var(--accent);
+  font-style: normal;
+}
+
+.hero-foot {
+  display: grid;
+  gap: var(--s4);
+  margin-top: var(--s6);
+  align-items: end;
+}
+
+@media (min-width: 760px) {
+  .hero-foot {
+    grid-template-columns: 1fr 1.4fr;
+  }
+}
+
+.role {
+  font-size: var(--t-sm);
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.role b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.tagline {
+  font-family: var(--display);
+  font-size: var(--t-xl);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin: 0;
+  text-wrap: balance;
+  font-weight: 400;
+}
+
+/* Sections */
+section.block {
+  display: grid;
+  gap: var(--s4);
+  padding-block: var(--s7) 0;
+}
+
+@media (min-width: 760px) {
+  section.block {
+    grid-template-columns: 180px 1fr;
+    gap: var(--s5);
+  }
+}
+
+.label {
+  font-size: var(--t-xs);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0;
+  padding-top: 0.5em;
+}
+
+.prose {
+  max-width: 62ch;
+  min-width: 0;
+}
+
+.prose p {
+  margin: 0 0 var(--s3);
+}
+
+.prose .lead {
+  font-family: var(--display);
+  font-size: var(--t-lg);
+  line-height: 1.45;
+}
+
+.prose .lead::first-letter {
+  font-size: 3.1em;
+  float: left;
+  line-height: 0.82;
+  padding: 0.06em 0.1em 0 0;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+.principles {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: principle;
+}
+
+.principles li {
+  counter-increment: principle;
+  display: grid;
+  grid-template-columns: 2.25rem 1fr;
+  padding-block: var(--s3);
+  border-top: 1px solid var(--rule);
+}
+
+.principles li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.principles li::before {
+  content: counter(principle, decimal-leading-zero);
+  font-family: var(--display);
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  gap: var(--s4);
+  min-width: 0;
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  padding: var(--s5) var(--s4) var(--s4);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  text-decoration: none;
+  position: relative;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.card:hover {
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+
+.card .src {
+  font-size: var(--t-xs);
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.card h3 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: var(--t-xl);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0;
+  padding-right: var(--s4);
+}
+
+.card .desc {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: var(--t-sm);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin: auto 0 0;
+  padding: var(--s2) 0 0;
+  list-style: none;
+}
+
+.tags li {
+  font-size: var(--t-xs);
+  border-top: 1px solid var(--rule);
+  padding-top: var(--s1);
+  margin-right: var(--s3);
+  color: var(--ink);
+}
+
+.card .go {
+  position: absolute;
+  top: var(--s4);
+  right: var(--s4);
+  font-family: var(--display);
+  font-size: var(--t-lg);
+  line-height: 1;
+  color: var(--ink-soft);
+  transition: transform 0.25s, color 0.25s;
+}
+
+.card:hover .go {
+  transform: translate(3px, -3px);
+  color: var(--accent);
+}
+
+.card.soon {
+  background: transparent;
+  border-style: dashed;
+}
+
+.card.soon:hover {
+  transform: none;
+  border-color: var(--rule);
+}
+
+.card.soon h3 {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* Elsewhere */
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.links li {
+  border-bottom: 1px solid var(--rule);
+}
+
+.links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s3);
+  padding-block: var(--s3);
+  text-decoration: none;
+  font-family: var(--display);
+  font-size: var(--t-lg);
+  transition: padding 0.25s, color 0.25s;
+}
+
+.links a span {
+  font-family: var(--body);
+  font-size: var(--t-xs);
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.links a:hover {
+  color: var(--accent);
+  padding-left: var(--s2);
+}
+
+footer {
+  padding-block: var(--s7) var(--s5);
+  color: var(--ink-soft);
+  font-size: var(--t-xs);
+}
+
+/* Motion: a gentle rise on load, hover states only */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.kicker,
+.name span,
+.hero-foot {
+  animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.kicker {
+  animation-delay: 0.05s;
+}
+.name .first {
+  animation-delay: 0.12s;
+}
+.name .last {
+  animation-delay: 0.24s;
+}
+.hero-foot {
+  animation-delay: 0.4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
