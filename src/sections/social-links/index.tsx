@@ -1,4 +1,4 @@
-import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faMedium, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import SocialIconLink from '../../components/social-icon';
 
 const SocialLinksSection = () => (
@@ -17,6 +17,11 @@ const SocialLinksSection = () => (
       href="https://medium.com/@kaiosilveira"
       icon={faMedium}
       ariaLabel="link to Medium blog"
+    />
+    <SocialIconLink
+      href="https://twitter.com/kaio_dev"
+      icon={faTwitter}
+      ariaLabel="link to X (Twitter) profile"
     />
   </section>
 );
